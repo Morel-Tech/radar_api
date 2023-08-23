@@ -36,7 +36,7 @@ abstract class RadarApi {
 
   @GET('v1/geocode/forward')
   Future<ForwardGeocodeResponse> forwardGeocode({
-    @Query('query') String query,
+    @Query('query') required String query,
     @Query('layers') String? layers,
     @Query('country') String? country,
   });
